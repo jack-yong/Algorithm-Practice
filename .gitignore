@@ -1,0 +1,5 @@
+ ##filter .o、.win,.exe.layout file##
+*.o 
+*.win  
+*.exe  
+*.layout
