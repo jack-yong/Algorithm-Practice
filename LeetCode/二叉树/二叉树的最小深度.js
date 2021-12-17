@@ -1,7 +1,7 @@
 /*
  * @Author: cyong
  * @Date: 2021-12-16 10:43:20
- * @LastEditors: cyong
+ * @LastEditors: cyon
  * @LastEditTime: 2021-12-16 11:15:00
  * @FilePath: \LeetCode\二叉树\二叉树的最小深度.js
  * @Description: 给定一个二叉树，找出其最小深度。
