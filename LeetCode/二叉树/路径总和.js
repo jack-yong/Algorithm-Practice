@@ -2,7 +2,7 @@
  * @Author: cyong
  * @Date: 2021-12-17 09:48:51
  * @LastEditors: cyong
- * @LastEditTime: 2021-12-17 10:05:53
+ * @LastEditTime: 2021-12-17 10:41:55
  * @FilePath: \LeetCode\二叉树\路径总和.js
  * @Description: 给你二叉树的根节点 root 和一个表示目标和的整数 targetSum 。
  * 判断该树中是否存在 根节点到叶子节点 的路径，这条路径上所有节点值相加等于目标和 targetSum 。
@@ -42,11 +42,13 @@ var hasPathSum = function(root, targetSum) {
 
 /**
  * @author: cyong
- * @description: 
+ * @description: 官方题解对于二叉树的遍历写的就很简洁
  * @param {TreeNode} root
  * @param {number} targetSum
  * @return {boolean}
  */
 var hasPathSum = function(root, targetSum) {
-
+        if(!root) return false
+        if(!root.left && !root.right) return root.val == targetSum
+        return hasPathSum(root.left,targetSum-root.val) || hasPathSum(root.right,targetSum-root.val)
 };
